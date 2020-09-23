@@ -12,4 +12,4 @@ COPY /srcs/wordpress /var/www/wordpress
 
 #RUN service mysql start | mariadb -u root
 
-CMD service mysql start && echo "mysql started" && service php7.3-fpm start && echo "php-fpm started" && nginx -g "daemon off;" && echo "nginx started"
+CMD service mysql start && echo "mysql started" && service php7.3-fpm start && echo "php-fpm started" && nginx -g "daemon off;"
